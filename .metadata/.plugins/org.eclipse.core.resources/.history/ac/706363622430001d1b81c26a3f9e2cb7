@@ -1,0 +1,45 @@
+package com.adactin.stepdef;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class StepDefinition_Class {
+
+	
+	@Given("User Launch the application")
+	public void user_launch_the_application() {
+	}
+	@When("User enter the username")
+	public void user_enter_the_username() {
+	}
+	@When("user enter the paasword")
+	public void user_enter_the_paasword() {
+	}
+	@Then("User clicks the login button and  Navigate to search hotel page")
+	public void user_clicks_the_login_button_and_navigate_to_search_hotel_page() {
+	}
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

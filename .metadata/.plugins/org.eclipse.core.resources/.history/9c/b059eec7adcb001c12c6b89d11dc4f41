@@ -1,0 +1,39 @@
+package com.demo;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ElementFind {
+	public static void main(String[] args) throws InterruptedException {
+
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\Admin\\eclipse-workspace-greens\\Selenium_Programs\\Driver\\chromedriver.exe");
+
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.facebook.com/");
+		WebElement creatac = driver.findElement(By.xpath("(//a[@role='button'])[2]"));
+creatac.click();
+Thread.sleep(3000);
+WebElement firstName = driver.findElement(By.xpath("(//input[@type='text'])[2]"));
+firstName.sendKeys("vijay");
+WebElement surename = driver.findElement(By.name("lastname"));
+surename.sendKeys("prakash");
+WebElement mob = driver.findElement(By.xpath("(//input[@type='text'])[4]"));
+mob.sendKeys("9042919143");
+WebElement psswrd = driver.findElement(By.xpath("(//input[@type='password'])[2]"));
+psswrd.sendKeys("9786262326");
+driver.findElement(By.id("day")).sendKeys("20");
+driver.findElement(By.id("month")).click();
+driver.findElement(By.name("sex")).click();
+driver.findElement(By.name("websubmit")).click();
+
+
+
+
+
+	}
+
+}

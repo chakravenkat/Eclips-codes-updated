@@ -1,0 +1,13 @@
+package funZone;
+
+public class ArunaGiri {
+	
+private void method() {
+	System.out.println("chakkaravarthi");
+		
+}
+
+	
+
+
+}

@@ -1,0 +1,12 @@
+package ortg.function;
+
+public class StringFunction {
+	public static void main(String[] args) {
+		String a ="Happy Pongal";
+		String b = "Happy Diwali";
+				
+		int i =a.length();	
+		System.out.println(i);
+	}
+
+}

@@ -1,0 +1,54 @@
+package com.demo;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class confirmalerrt {
+	public static void main(String[] args) {
+		
+		
+		System.setProperty("webdriver.chrome.driver",
+		"C:\\Users\\Admin\\eclipse-workspace-greens\\Selenium_Programs\\Driver\\chromedriver.exe");
+	
+		WebDriver driver =new ChromeDriver();
+		driver.manage().window().maximize();
+		
+		driver.get("http://leafground.com/pages/Alert.html");
+		
+		
+//		WebElement alertbtn = driver.findElement(By.xpath("(//a[@target='_blank'])[14]"));
+//		alertbtn.click();
+		
+		WebElement prompt = driver.findElement(By.xpath("//button[text()='Prompt Box']"));
+		prompt.click();
+		String text = prompt.getText();
+		System.out.println(text);
+		driver.switchTo().alert().sendKeys("greens");
+		String text1 = prompt.getText();
+		System.out.println(text1);
+		driver.switchTo().alert().accept();
+		
+	
+//		driver.switchTo().alert().sendKeys("kamal");
+//		driver.switchTo().alert().accept();
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

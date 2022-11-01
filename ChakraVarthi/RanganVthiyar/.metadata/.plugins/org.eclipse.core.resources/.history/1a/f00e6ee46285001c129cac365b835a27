@@ -1,0 +1,28 @@
+package org.loops;
+
+import java.util.Scanner;
+
+public class DoWhile {
+	public static void main(String[] args) {
+		System.out.println("India Vs Pakistan First ODI");
+		Scanner ref=new Scanner(System.in);
+		System.out.print("Enter Score Card : ");
+			int i=ref.nextInt();
+			
+			if(i>240)
+			{
+			System.out.print("India Won The Match");
+			}
+			
+			else if (i==240)
+				System.out.print("Match Draw");
+			
+			else  {
+				System.out.print("India loss the Match");
+				
+			}
+				
+		
+	}
+
+}

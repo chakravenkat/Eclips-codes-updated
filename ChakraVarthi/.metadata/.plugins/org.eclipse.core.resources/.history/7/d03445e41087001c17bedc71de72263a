@@ -1,0 +1,36 @@
+package ortg.function;
+
+import java.util.Scanner;
+
+public class StringFunction {
+	public static void main(String[] args) {
+		String a ="Happy Pongal";
+		String b = "Happy Diwali";
+     	Scanner ac=new Scanner(System.in);
+     	String ad =("Enter THe wish ");
+     	String name =ac.next();
+		
+		System.out.println(a.length());
+		
+		System.out.println(b.equalsIgnoreCase(a));      
+		
+		System.out.println( a.equals(b));
+		
+		
+        System.out.println(b.toUpperCase());
+       
+        System.out.println(a.toLowerCase());
+        
+        
+        System.out.println(a.charAt(8));
+        
+        String sub=b.substring(4,6);
+        System.out.println(sub);
+        
+       
+        System.out.println(a.replace("Pongal","Pogi"));
+        
+		
+	}
+
+}

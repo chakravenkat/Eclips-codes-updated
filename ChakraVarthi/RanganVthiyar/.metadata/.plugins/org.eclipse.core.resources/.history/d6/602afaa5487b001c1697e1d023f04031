@@ -1,0 +1,14 @@
+package funZone;
+
+public class ArunaGiri {
+	
+private void method() {
+	System.out.println("chakkaravarthi");
+		
+}
+public static void main(String[] args) {
+//object creation- Class Name  -ObjectName = New Class Name();
+	ArunaGiri -
+}
+
+}

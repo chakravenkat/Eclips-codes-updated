@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Cucumber_Adactin/src/test/resources/extent-config (1).xml&apos; to &apos;extent-config.xml&apos;" description="Rename resource &apos;extent-config (1).xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/test/resources/extent-config (1).xml" name="extent-config.xml" stamp="1657551402982" updateReferences="true"/>
+</session>

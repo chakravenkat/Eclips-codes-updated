@@ -1,0 +1,26 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Twitter {
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\Admin\\eclipse-workspace-greens\\Selenium_Programs\\Driver\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("twitter.com/login");
+//		WebElement green = driver.findElement(By.xpath("//input[@name='DUMMY1']"));
+//		green.sendKeys("kanchanasudheer");
+//
+//		WebElement green2 = driver.findElement(By.xpath("//span[contains(@id,'HDisplayDefault.Rb14.C3')]"));
+//		green2.click();
+//
+//		WebElement user = driver.findElement(By.xpath("//input[contains(@class,'login-input type_UserPrincipal')]"));
+//		user.sendKeys("Vijay");
+//		WebElement passwrd = driver.findElement(By.xpath("//input[contains(@name,'AuthenticationFG.ACCESS_CODE')]"));
+//		passwrd.sendKeys("12345679785558jhhjhk");
+
+	}
+
+}

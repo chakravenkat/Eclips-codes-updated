@@ -1,0 +1,27 @@
+package org.loops;
+
+import java.util.Scanner;
+
+public class DoWhile {
+	public static void main(String[] args) {
+		Scanner ref=new Scanner(System.in);
+		System.out.println("Enter Score Card : ");
+			int i=ref.nextInt();
+			
+			if(i>240)
+			{
+			System.out.println("India Won The Match");
+			}
+			
+			else if (i==240)
+				System.out.println("Match Draw");
+			
+			else  {
+				System.out.println("India loss the Match");
+				
+			}
+				
+		
+	}
+
+}

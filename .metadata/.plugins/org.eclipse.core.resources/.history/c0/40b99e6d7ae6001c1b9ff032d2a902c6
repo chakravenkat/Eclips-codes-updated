@@ -1,0 +1,19 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Twitter {
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\Admin\\eclipse-workspace-greens\\Selenium_Programs\\Driver\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://twitter.com/login");
+		WebElement green = driver
+				.findElement(By.xpath("//div[contains(@class,'css-1dbjc4n r-mk0yit r-1f1sjgu r-13qz1uu')]"));
+		green.click();
+
+	}
+
+}

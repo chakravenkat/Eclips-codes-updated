@@ -1,0 +1,29 @@
+package ortg.function;
+
+public class StringFunction {
+	public static void main(String[] args) {
+		String a ="Happy Pongal";
+		String b = "Happy Diwali";
+				
+		int i =a.length();	
+		System.out.println(i);
+		
+		boolean eq = a.equalsIgnoreCase(a);
+		System.out.println(eq);
+		boolean eq1 = a.equals(a);
+		System.out.println(eq1);
+		
+		String uc =b.toUpperCase();
+        System.out.println(uc);
+        
+        String lc =a.toLowerCase();
+        System.out.println(lc);
+        
+        char c=a.charAt(8);
+        System.out.println(c);
+        
+        
+		
+	}
+
+}

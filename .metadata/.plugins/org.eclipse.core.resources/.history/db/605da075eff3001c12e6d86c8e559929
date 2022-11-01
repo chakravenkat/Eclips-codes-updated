@@ -1,0 +1,150 @@
+package com.Basss;
+
+import java.util.List;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class Bass {
+
+	public static WebDriver driver;
+
+	public static WebDriver BrowserLaunch(String browsername) {
+
+		if (browsername.equalsIgnoreCase("chrome")) {
+			System.setProperty("webdriver.chrome.driver",
+					"C:\\Users\\Admin\\eclipse-workspace-greens\\Selenium_Programs\\Driver\\chromedriver.exe");
+			driver = new ChromeDriver();
+		} else if (browsername.equalsIgnoreCase("firefox")) {
+			System.setProperty("webdriver.gecko.driver",
+					"C:\\Users\\Admin\\eclipse-workspace-greens\\Selenium_Programs\\Driver\\geckodriver.exe");
+			driver = new FirefoxDriver();
+
+		}
+		driver.manage().window().maximize();
+		return driver;
+	}
+
+	public static void get(String url) {
+		driver.get(url);
+	}
+
+	public static void gettitle() {
+		String title = driver.getTitle();
+		System.out.println(title);
+	}
+
+	public static void currenturl() {
+		String url = driver.getCurrentUrl();
+		System.out.println(url);
+	}
+
+	public static void close() {
+		driver.close();
+
+	}
+
+	public static void quit() {
+		driver.quit();
+	}
+
+	public static void NaviTo(String url) {
+		driver.navigate().to(url);
+	}
+
+	public static void back() {
+		driver.navigate().back();
+	}
+
+	public static void Refresh() {
+		driver.navigate().refresh();
+	}
+
+	public static void Forward() {
+		driver.navigate().forward();
+	}
+
+	public static void gettext(WebElement element) {
+		String text = element.getText();
+		System.out.println(text);
+
+	}
+	public static void click(WebElement element) {
+		element.click();
+		
+	}
+	public static void sendkey(WebElement element,String value) {
+		element.sendKeys(value);
+	}
+	public static void clear() {
+		
+	}
+	
+	
+	
+public static void select(WebElement element,String option,String value,int a){
+	Select s=new Select(element);
+	
+	if (option.equalsIgnoreCase("value")) {
+		s.selectByValue(value);
+		
+	}
+	else if (option.equalsIgnoreCase("text")) {
+		s.selectByVisibleText(value);
+	}
+	else if (option.equalsIgnoreCase("index")) {
+		s.selectByIndex(a);
+	}
+	else if (option.equalsIgnoreCase("getoption")) {
+	List<WebElement> options = s.getOptions();
+	for (WebElement web : options) {
+		System.out.println(web.getText());
+	}
+	}
+	else if (option.equalsIgnoreCase("ismultiple")) {
+		boolean multiple = s.isMultiple();
+		System.out.println("Is This MultipleDropdown "+ multiple);
+		
+	}
+	else if (option.equalsIgnoreCase("getfirstoption")) {
+		WebElement stoption = s.getFirstSelectedOption();
+		System.out.println(stoption);
+	}
+	}
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+

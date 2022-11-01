@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;First Poriject&apos;" deleteContents="false" description="Delete resource &apos;First Poriject&apos;" element1="/First Poriject" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1658041664102"/>&#x0A;<refactoring comment="Delete resource &apos;Data_Read&apos;" deleteContents="false" description="Delete resource &apos;Data_Read&apos;" element1="/Data_Read" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1658042254434"/>
+</session>

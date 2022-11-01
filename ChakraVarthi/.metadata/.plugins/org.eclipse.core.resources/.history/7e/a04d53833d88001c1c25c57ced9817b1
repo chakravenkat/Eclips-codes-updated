@@ -1,0 +1,5 @@
+package org.immutable;
+
+public class MutableOrImmutable {
+
+}
